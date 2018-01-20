@@ -26,3 +26,24 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+body {
+  background: #FFF663;
+  color: #333;
+  font-family: 'Consolas', helvetica, sans-serif;
+}
+h1 {
+  font-family: 'Bungee Shade', helvetica, sans-serif;
+}
+ul {
+  list-style: none;
+  display: inline-block;
+}
+li {
+  border-bottom: 1px solid #999;
+  margin-bottom: 4px;
+  padding-bottom: 4px;
+}
+li:last-child {
+  border-bottom: none;
+}
