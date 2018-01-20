@@ -29,6 +29,7 @@ class App extends Component {
   }
 
   removeUser(id) {
+    var that = this
     let users = this.state.users
     let user = users.find(function(user) {
       return user.id === id
@@ -40,6 +41,10 @@ class App extends Component {
 
     fetch(request)
       .then(function(response) {
+        users.splice(users.indexOf(user), 1)
+        that.setState({
+          users: users
+        })
         response.json()
         .then(function(data) {
           console.log(data)
